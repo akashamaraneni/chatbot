@@ -1,0 +1,540 @@
+@font-face {
+    font-family:'CiscoSans';
+    font-style:normal;
+    font-weight:100;
+    src:url("../fonts/CiscoSansTTExtraLight.woff2") format("woff2"), url("../fonts/CiscoSansTTExtraLight.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+    
+    @font-face {
+    font-family:'CiscoSans';
+    font-style:oblique;
+    font-weight:100;
+    src:url("../fonts/CiscoSansTTExtraLightOblique.woff2") format("woff2"), url("../fonts/CiscoSansTTExtraLightOblique.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+    
+    @font-face {
+    font-family:'CiscoSans';
+    font-style:normal;
+    font-weight:300;
+    src:url("../fonts/CiscoSansTTLight.woff2") format("woff2"), url("../fonts/CiscoSansTTLight.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+    
+    @font-face {
+    font-family:'CiscoSans';
+    font-style:oblique;
+    font-weight:300;
+    src:url("../fonts/CiscoSansTTLightOblique.woff2") format("woff2"), url("../fonts/CiscoSansTTLightOblique.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+    
+    @font-face {
+    font-family:'CiscoSans';
+    font-style:normal;
+    font-weight:400;
+    src:url("../fonts/CiscoSansTTRegular.woff2") format("woff2"), url("../fonts/CiscoSansTTRegular.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+    
+    @font-face {
+    font-family:'CiscoSans';
+    font-style:bold;
+    font-weight:700;
+    src:url("../fonts/CiscoSansTTBold.woff2") format("woff2"), url("../fonts/CiscoSansTTBold.woff") format("woff");
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    
+    html, body{ height:100%; font-family: 'CiscoSans' !important; color:#58585b; font-size: 14px; font-weight: 300; font-style: normal; }
+    ul, li {list-style-type: none; padding: 0; margin: 0; }
+    body .container-fluid { padding-left:30px; padding-right:30px; }
+    strong, .bold {font-weight: 700; font-style: bold;}
+    .small-text {font-size:12px; line-height: 18px;}
+    a {
+        color:#00bceb;
+        &:hover {
+            color:#049fd9;
+            text-decoration: none;
+            transition: all 0.5s ease 0s; 
+            -webkit-transition: all 0.5s ease 0s;}
+    }
+    .link-underline{
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .disable-link { color: #dfdfdf; pointer-events: none;}
+    .light-txt { color: #9a9a9a; }
+    .weight-normal {font-weight: normal;}
+    .weight-light {font-weight: 100;}
+    .note {font-family: CiscoSans; font-size: 12px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.5; letter-spacing: normal; color: #58585b;}
+    .page-footer { padding: 30px 0; text-align: right; border-top:1px solid #dfdfdf; }
+    .small-label {font-size: 12px; font-style: normal; }
+    .clearfix { clear: both; }
+    
+    
+    
+    /*------------- All buttons CSS starts here -------------*/
+    .btn:focus, .btn.focus{ box-shadow: none !important; }
+    .btn { font-weight:300; font-size: 16px; font-family:'CiscoSans'; padding: 6px 40px; border-radius: 6px; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; }
+    .btn.small { font-size:14px; font-weight:400; padding:5px 25px 3px !important; }
+    .btn:hover { -webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.25); box-shadow: 0 3px 15px 0 rgba(0,0,0,.25); }
+    .btn[disabled], .btn.disabled, .btn:disabled { pointer-events: none; cursor: auto; opacity: 1; }
+    .btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active { color:#fff; background: #049fd9; border-color:#049fd9; }
+    .btn-outline-primary{ border-color: #049fd9; color:#049fd9; }
+    .btn-outline-primary[disabled]{ border-color: #dfdfdf; color:#dfdfdf; }
+    .btn-primary[disabled], .btn-primary:disabled{ background: #dfdfdf; border-color: #dfdfdf; }
+    a.btn.btn-primary.small:hover {background: #049fd9; color: #ffffff!important; border:1px solid #049fd9;}
+    
+    /*------------- Buttons with icons CSS starts here -------------*/
+    .btn-with-icon { border: 1px solid #049fd9; border-radius: 5px; padding: 5px 20px 2px 20px; color: #049fd9; font-size: 14px; outline: none; display: inline-block;}
+    .btn-with-icon:hover { -webkit-box-shadow: 0 3px 15px 0 rgba(0,0,0,.25); box-shadow: 0 3px 15px 0 rgba(0,0,0,.25); }
+    .btn-with-icon [class^="icon-"], .btn-with-icon [class*=" icon-"], .btn-without-border [class^="icon-"], .btn-without-border [class*=" icon-"] {display: inline-block; margin-right: 7px;}
+    .btn-with-icon.download-btn .icon-upload { transform: rotate(180deg); vertical-align: middle;}
+    
+    /*------------- Pagination CSS starts here -------------*/
+    .paginater { font-size: 14px; font-weight: 400; letter-spacing: 1px; }
+    .pagination .page-item .page-link { font-size: 14px; padding:8px 12px 5px; }
+    .pagination .page-item .page-link:hover, .pagination .page-item.clickable .page-link:hover { background-color:#049fd9; border-color:#049fd9; color: #fff; }
+    .pagination .page-item .page-link:focus { box-shadow: none; }
+    .pagination .page-item.disabled .page-link { color: #dfdfdf; border-color:#dfdfdf; }
+    .pagination .page-item.active .page-link { background-color: #00bceb;  border-color:#00bceb; }
+    .pagination .page-item.active .page-link:hover { color:#fff; }
+    .pagination .page-item.clickable .page-link { color: #00bceb; border-color:#00bceb; }
+    .entries.custom-dropdown {display: inline-block; margin-right: 5px;}
+    .entries.custom-dropdown .icon-arrow {position: relative; right:0;}
+    .entries.custom-dropdown .icon-arrow:before {color: #58585b; font-size: 5px;}
+    .entries.custom-dropdown.with-checkbox {border:0;}
+    .entries.custom-dropdown button, .entries.custom-dropdown .dropdown-menu { font-size: 12px; letter-spacing: 1px; }
+    .entries.custom-dropdown button span { margin: 0px 10px 0 0; padding: 0 5px 3px 5px; height: 20px; border-bottom: 1px solid #dfdfdf; display: inline-block; font-size: 14px; }
+    .entries.custom-dropdown.with-checkbox .dropdown-menu {min-width: 45px;}
+    .entries.custom-dropdown .dropdown-item {padding: 3px 5px;}
+    .entries.custom-dropdown .dropdown-item:hover {color:#ffffff; background: #00bceb;}
+    
+    .custom-dropdown.with-checkbox > button.btn {
+        background: transparent;
+        box-shadow: none !important;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        color: #58585b;
+    }
+    /*---------- Popup CSS starts here -------------*/
+
+    .modal-content {border-radius: 0;}
+    .modal-body {padding: 0 30px;}
+    .modal-header {padding-left: 30px;}
+    // .modal-header {margin:0 20px; padding:15px 0 11px; border-bottom: 2px solid #c6c7ca;}
+    // .modal-title {font-size: 22px; font-weight: 200; font-style: normal; color:#58585b;}
+    // .modal-header p { margin-left: 34px; }
+    // .modal-header img { float: left; height: 23px; width: 23px; position: relative;  top: 4px; margin-right: 10px;}
+    // .modal-header .icon-cross {margin-top: 8px;}
+    // .icon-cross::before {color:#c6c7ca !important; cursor: pointer;}
+    // .icon-cross:hover::before {color:#049fd9 !important;}
+    // .modal-footer {margin:0 20px; padding: 20px 0; border:none;}
+    // .modal-footer.bordered { border-top: 1px solid #c6c7ca; margin-top:20px; }
+
+    
+  
+    /*---------- Dropdown menu CSS starts here -------------*/
+    .dropdown { display: inline-block; }
+    .dropdown button.dropdown-toggle { box-shadow: none; }
+    .dropdown .dropdown-menu:before {content: " "; border: solid #00bceb; border-width: 0 1px 1px 0; display: inline-block; padding: 5px; transform: rotate(127deg); -webkit-transform: rotate(227deg); right: 16px; top: -6px; position: absolute; background: #ffffff; }
+    .dropdown .dropdown-menu { left: auto !important; border-radius: 0; border: solid 1px #00bceb; right: -6px; transform: unset; top: 21px; padding: 7px 0; -webkit-box-shadow: 0 1px 4px 0 rgba(150, 150, 150, 0.5); box-shadow: 0 1px 4px 0 rgba(150, 150, 150, 0.5); color: #58585b;}
+    .dropdown .dropdown-menu .dropdown-item { font-size: 14px; color: #00bceb; font-weight: 300; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; padding:7px 20px 5px; }
+    .dropdown .dropdown-menu .dropdown-item:hover { background-color: #00bceb; color: #ffffff; }
+    .dropdown .dropdown-menu .dropdown-item.disabled, .dropdown .dropdown-menu .dropdown-item:disabled { color: #dfdfdf;pointer-events: none; }
+    .dropdown .dropdown-menu .dropdown-item.not-clickable { color: #9a9a9a; pointer-events: none; }
+    
+    /*---------- Dropdown Without Background CSS starts here -------------*/
+    .dropdown.without-bg button, .dropdown.without-bg button:focus, .dropdown.without-bg  button:not(:disabled):not(.disabled):active, .show > button.dropdown-toggle { background: none; color:#00bceb; border:none; padding:0; font-size:14px; outline:none; cursor: pointer;}
+    .dropdown.without-bg .dropdown-menu { right: -6px; left:auto !important; top:27px !important; transform: none !important; min-width: 120px; border-radius:0; -webkit-box-shadow: 0 2px 4px 0 rgba(150, 150, 150, 0.5); box-shadow: 0 2px 4px 0 rgba(150, 150, 150, 0.5);}
+    .dropdown .dropdown-toggle::after { content: " "; border: solid #00bceb; border-width: 0 1px 1px 0; display: inline-block; padding: 4px 3px 3px 4px; transform: rotate(45deg); -webkit-transform: rotate(45deg);}
+    
+    /*---------- Button Dropdown CSS starts here -------------*/
+    .btn-dropdown button, .btn-dropdown button:focus, .btn-dropdown button.btn:not(:disabled):not(.disabled):active, .btn-dropdown button.btn:not(:disabled):not(.disabled).active, .show.btn-dropdown > button.dropdown-toggle { padding:5px 15px 3px; color:#ffffff; font-size: 14px; font-weight: 400; background: #049fd9; border:0; }
+    .dropdown.btn-dropdown .dropdown-toggle::after { border-color: #ffffff; }
+    .dropdown.btn-dropdown .dropdown-menu { min-width: 250px; left:50% !important;}
+    .dropdown.btn-dropdown .dropdown-menu:before { left:calc(50% + 9px); right:auto; }
+    
+    /*---------- Input box CSS starts here -------------*/
+    .mandatory{ color: red; margin-left: 3px }
+    label {	color: #9E9EA2; font-size: 12px; }
+    .form-group{ position: relative;}
+    .form-control { border-width:0 0 1px 0; border-color: #dfdfdf; border-radius: 0; background: none; font-size:18px; font-weight: 300; font-style:normal; position: relative; z-index: 9; padding:5px 0 1px; color: #58585b; box-shadow: none; }
+    .form-control-placeholder { font-size: 14px; margin-bottom: 0px; color:#a1a1a1; font-weight: 300; font-style: oblique; top: 9px; position: absolute; }
+    .form-control:focus { outline: 0; box-shadow: none; border-color: #049fd9; color: #58585b; background: transparent; }
+    input.form-control.error { color:#ff0000; }
+    .form-control + .form-control-placeholder { cursor:text; transition: all 200ms; }
+    .form-control:focus + .form-control-placeholder, .form-control:valid + .form-control-placeholder,  .form-control:focus + label.error + .form-control-placeholder, .form-control:valid + label.error + .form-control-placeholder {transform: translate3d(0, -110%, 0); font-size: 12px !important; font-style: normal; top:3px; }
+    
+    /*---------- Search box CSS starts here -------------*/
+    .form-group.searchbarWrap {margin-bottom: 8px; width: 70%; display: inline-block; }
+    .searchbarWrap input.form-control { padding-right: 25px; }
+    .searchbarWrap .icon-search { position: absolute; top: 12px; right: 0; }
+    .not-animated .form-control:focus + .form-control-placeholder, .not-animated .form-control:valid + .form-control-placeholder, .not-animated .form-control:focus + label.error + .form-control-placeholder, .not-animated .form-control:valid + label.error + .form-control-placeholder {display: none;}
+    .not-animated .form-control-placeholder { top:0; line-height: 42px; }
+    .not-animated.input-box .form-control-placeholder { top:18px; }
+    .not-animated.input-box .small-label { position: relative; top:3px; }
+    .searchbarWrap.not-animated input.form-control {padding-right: 40px;}
+    .user-dropdown .searchbarWrap.not-animated input.form-control, .user-dropdown .searchbarWrap.not-animated .form-control-placeholder { padding-left: 25px;}
+    
+    
+    /*---------- Table CSS starts here -------------*/
+
+    .table { 
+        border-bottom:1px solid #dfdfdf; 
+        thead { 
+            background: #ebebeb; 
+            text-transform: uppercase;}
+        th{
+            border: 1px solid #dfdfdf;
+            border-top: 0px;
+            border-bottom: 0px;
+            padding:9px 20px; 
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .4px; 
+            height: 42px;
+            vertical-align: middle;
+        }
+        td{
+            border: 1px solid #dfdfdf;
+            border-top: 0px;
+            border-bottom: 0px;
+            padding:9px 20px; 
+        }
+        tr{
+            transition: all 0.5s ease 0s; 
+        }
+    }    
+ 
+    .table thead th .icon-filter { font-size: 9px; }
+    .table tbody tr{ transition: all 0.5s ease 0s; }
+    .table tbody tr:nth-child(even) { background-color: #ebebeb; }
+    .table tbody tr:hover { background-color: #ebebeb; }
+    .table tbody tr.no-background:hover { background-color: transparent; }
+    .table  tbody tr td:first-child, .table thead tr th:first-child { border-left: 0; }
+    .table tbody td:last-child, .table thead th:last-child { border-right: 0px; }
+ 
+    /*---------- Alert Dropdown CSS starts here -------------*/
+    .dropdown-menu.alert-dropdown {border-left:5px solid #6cc04a; border-top:0; border-right: 0; border-bottom: 0; padding:0; min-width: 350px !important; padding-left:20px; border-radius:0 10px 10px 0; top:31px !important; right:-75px !important; color: #58585b;}
+    .dropdown-menu.alert-dropdown h5 {font-size: 14px; font-weight: bold; margin-bottom: 3px; }
+    .dropdown-menu.alert-dropdown > div {padding-right: 25px; height:100%;}
+    .dropdown-menu.alert-dropdown .icon-cross {position:absolute; top:0; right:0; background: #6cc04a; height:100%; width:35px; padding-top: 10px; text-align: center; border-radius:0 10px 10px 0; }
+    .dropdown-menu.alert-dropdown .icon-cross::before {color:#ffffff !important;}
+    .dropdown .alert-dropdown.dropdown-menu:before {border-radius:1px; border-color:#f1f1f1; right:70px; padding: 10px; top:-10px;}
+    
+/*---------------- Main Header Right Nav CSS starts here -------------------*/
+.bg-grey {
+    background: #f5f5f5;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+    .navbar-nav { 
+        display: inline-block;
+        float: right; 
+        margin-top: 12px; 
+        li { 
+            display: inline-block;
+             margin-right: 5px;
+             .dropdown-toggle{
+                    margin-right: 12px;
+             }
+            }
+        } 
+        .navbar-brand {
+            .icon-logo { 
+                font-size:40px; 
+                float:left; 
+                margin:5px 30px 0 0px;
+                 display: block;
+                 }
+            }  
+        .breadcrumb {
+             background: transparent;
+              padding: 0px; 
+              margin-bottom: 0px;
+            }
+        .breadcrumb {
+            li { 
+                display: inline-block; 
+                font-size: 12px; 
+                line-height: 16px; 
+            }
+        }
+        .breadcrumb-item{
+            &.active { 
+                color:#58585b;
+             }
+            }
+        .navbar-brand {
+            .site-title { 
+                color: #58585b; 
+                font-size: 28px;
+                 line-height: 22px; 
+                 font-weight: 100;
+                  display: inline-block;
+                   margin-top: 8px;
+               }
+            }
+
+
+            
+/*---------------- Navigation CSS starts here -------------------*/
+.user-options {
+    // margin-bottom: 5px;
+     border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb; 
+   }
+.user-options {
+       .nav-tabs {
+           li { 
+               padding: 0px 28px; 
+               a {
+                   color: #58585b; 
+                   padding: 15px 0 10px; 
+                   display: inline-block; 
+                   text-decoration: none;
+                   &.active{
+                    color: #00bceb;
+                    font-weight: 400;
+                        &::after   {
+                            transform: unset;
+                         }
+                    }
+                    &:hover, &.active{
+                        &::after{
+                            transform: scaleX(1); transform-origin: 0% 50%;
+                        }
+                    }
+                   &::after{
+                       content: ''; 
+                       border-bottom: 4px solid #00bceb; 
+                       display: block;
+                        transform: scaleX(0);
+                         transition: transform 250ms ease-in-out;
+                        transform-origin: 0% 0%; 
+                        position: relative; 
+                        top: 10px;
+                    }
+
+                   } 
+               }
+           }
+           &.modal-tabs{
+               background: #f2f2f2;
+           }
+       }
+
+       .data-tabs{
+            width: 100%;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 14px 30px 10px 30px;
+           li{
+               display: inline-block;
+               border-right: 1px solid #dfdfdf;
+               padding: 0px 50px 0px 8px;
+               .counter{
+                    font-size: 12px;
+                    color: #9E9EA2;
+                    font-weight: 300;
+               }
+               .counts{
+                    font-size: 16px;
+                    color: #58585b;
+               }
+               &:first-child{
+                   padding-left : 0px; 
+               }
+               &:last-child{
+                   border-right: 0px;
+               }
+           }
+       }
+
+
+
+   /*---------------bot-options-----------*/
+
+
+.my-bots{
+     font-size: 28px; 
+}
+.bot-options {
+    li{
+    display: inline-block;
+    border: 1px solid #00bceb;
+    border-radius: 4px;
+    width: 150px;
+    color: #00bceb; 
+    padding: 3px 2px 4px;
+    text-align: center;
+    font-size: 14px;
+
+         &.active {
+        transform: scale(1.078);
+        -webkit-transform: scale(1.078);
+        background: #00bceb;
+        color: #fff;
+        padding: 8px 5px 7px;
+        font-size: 16px;}
+    }
+}
+
+.tile-view-icon{
+    float: right;
+    display: inline-block;
+    border: 1px solid #dfdfdf;
+    padding: 0px 16px 0px;
+    border-radius: 8px;
+        li{
+            padding-top: 10px;
+            display: inline-block;
+            padding-bottom: 4px;
+            &:first-child{
+                border-right: 1px solid #dfdfdf;
+                padding-right: 10px;
+            }
+            &:last-child{
+                padding-left: 6px;
+            }
+        }
+    
+}
+
+/*---------- Table CSS starts here -------------*/
+
+.table{
+    tr{
+        a{
+            .collapse-btn{
+                height: 16px;
+                width: 16px;
+                margin-right: 10px;
+            }
+            .collapse-all-btn{
+                height: 20px;
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+}
+
+.footer{
+    margin: 25px 0px;
+
+
+}
+
+ .container-fluid {
+
+    // background:#E5E5E5;
+
+.mid-container{
+    padding:16px 0 13px;
+.tile 
+{
+  height:200px;
+  box-shadow: 0px 1px 4px 0 #ccc;
+  background:#fff;
+  margin:5px -9px 10px 0px;
+  padding:11px 16px 25px 20px;
+  .heading a 
+  {
+  font-size:28px;
+  text-decoration:none;
+  color:#00BCEB;
+  font-weight:normal;  
+   }
+.sub-heading
+{
+    margin-bottom:2px;
+    color:#58585B;
+    font-size:12px;
+}
+.contact-summary
+{
+padding-top:20px;
+.floatLeft
+{
+float:left;
+width:50%;
+font-size:12px;
+color:#9e9ea2}
+.floatRight
+{
+float:right;
+width:50%;
+font-size:12px;
+padding-left: 38px;
+color:#9e9ea2
+}
+}
+
+.bold-text
+{
+font-weight:700;
+color:#000;
+display: inline-block;
+padding-right: 4px;
+}
+.usages{
+    display: inline-block;
+}
+
+.contact-name
+ {
+font-size:12px; 
+color:#9E9EA2; 
+}
+.contact-ico img
+{
+width:14px;
+height:14px;
+vertical-align:middle;
+}
+.option-ico 
+{
+height:6px;
+float:right;
+margin-top:6px;
+}
+}
+
+
+}
+}
+.btn-secondary {
+    width: 90px;
+    height: 90px;
+    line-height: 70px;
+    font-size: 70px;
+    border-radius: 45px;
+    background:#005073;
+    position: fixed;
+    right: 30px;
+    bottom:10px;
+    padding:10px 12px;
+    text-align:center;
+    &:hover{
+        background:#005073;
+    }
+    
+  }
+  .plus-ico{
+    text-align:center;
+    position:relative;
+    top:-24px;
+}
+  
+// remove after real hover
+a:hover {
+    opacity: .6;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 188, 235, 0.09);
+}

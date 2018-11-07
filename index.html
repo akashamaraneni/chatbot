@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<head>
+  <title>Cisco</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6">
+        <div href="javascript:void(0)" class="navbar-brand">
+          <a href="index.html" class="icon-logo"></a>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Cisco Commerce</li>
+          </ol>
+          <a class="site-title" href="index.html">Customer Experience Bots </a>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <ul class="nav navbar-nav">
+          <li>
+            <div class="dropdown without-bg">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Phillip Bradley
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="images/search.svg">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="images/alerts.svg">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="images/messages.svg">
+            </a>
+          </li>
+          <li class="mr-0"><a href="javascript:void(0)">
+            <img src="images/preferences.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!--- User Options -->
+  <section class="user-options container-fluid">
+    <ul class="nav nav-tabs border-0">
+      <li class="pl-0"><a class="active" href="mybots.html">My Bots</a></li>
+      <li><a href="virtual-accounts.html">My Skill Bundles</a></li>
+      <li><a href="users.html">Manage Skills</a></li>
+      <li><a href="user-groups.html">Advanced Skill Builder</a></li>
+    </ul>
+  </section>
+  <div class="container-fluid bg-grey pb-5">
+    <section class="py-5 h-130">
+      <div class="row">
+        <div class="col-md-3">
+          <h1 class="my-bots">My Bots</h1>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center text-center">
+          <!--  <ul class="bot-options">
+            <li><a href="javascript:void(0)"></a>My Bot</a></li>
+            <li class="active"><a href="javascript:void(0)"></a>Favorite Bot</a></li>
+            <li><a href="javascript:void(0)"></a>Most Used</a></li>
+          </ul> -->
+          <section class="center slider">
+            <div class="text-center">
+              My Bots
+            </div>
+            <div class="text-center">
+              Favorite Bots
+            </div>
+            <div class="text-center">
+              Most Used
+            </div>
+            <div class="text-center">
+              My Bots
+            </div>
+            <div class="text-center">
+              Favorite Bots
+            </div> 
+            <div class="text-center">
+              Most Used
+            </div>
+          </section>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group searchbarWrap">
+            <input type="text" class="form-control mb-0" id="addUser" aria-describedby="" required>
+            <label class="form-control-placeholder" for="addUser">Search by
+              <div class="dropdown without-bg">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </div>
+            </label>
+            <i class="icon-search"></i>
+          </div>
+          <!--<a class="tile-view-icon" href="javascript:void(0)">
+            <img class="tile-options" src="images/grid and tile view.svg">
+          </a> -->
+          <ul class="tile-view-icon">
+            <li>
+              <a href=href="javascript:void(0)">
+                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.13638 0.5H0.68182C0.306819 0.5 0 0.806872 0 1.18194V6.63744C0 7.0125 0.306819 7.31938 0.68182 7.31938H6.13638C6.51138 7.31938 6.8182 7.0125 6.8182 6.63744V1.18194C6.8182 0.806872 6.51138 0.5 6.13638 0.5V0.5Z" fill="#00BCEB"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.36553V14.821C0 15.1961 0.306819 15.503 0.68182 15.503H6.13638C6.51138 15.503 6.8182 15.1961 6.8182 14.821V9.36553C6.8182 8.99047 6.51138 8.68359 6.13638 8.68359H0.68182C0.306819 8.68359 0 8.99047 0 9.36553V9.36553Z" fill="#00BCEB"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18176 1.18194V6.63744C8.18176 7.0125 8.48858 7.31938 8.86358 7.31938H14.3181C14.6931 7.31938 15 7.0125 15 6.63744V1.18194C15 0.806872 14.6931 0.5 14.3181 0.5H8.86358C8.48858 0.5 8.18176 0.806872 8.18176 1.18194V1.18194Z" fill="#00BCEB"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86358 15.503H14.3181C14.6931 15.503 15 15.1961 15 14.821V9.36553C15 8.99047 14.6931 8.68359 14.3181 8.68359H8.86358C8.48858 8.68359 8.18176 8.99047 8.18176 9.36553V14.821C8.18176 15.1961 8.48858 15.503 8.86358 15.503V15.503Z" fill="#00BCEB"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./mybots.html">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.77322 2.54741H14.3183C14.6932 2.54741 15 2.24055 15 1.8655C15 1.49045 14.6932 1.18359 14.3183 1.18359H4.77322C4.39824 1.18359 4.09143 1.49045 4.09143 1.8655C4.09143 2.24055 4.39824 2.54741 4.77322 2.54741Z" fill="#9E9EA2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3183 12.7734H4.77322C4.39824 12.7734 4.09143 13.0803 4.09143 13.4553C4.09143 13.8304 4.39824 14.1372 4.77322 14.1372H14.3183C14.6932 14.1372 15 13.8304 15 13.4553C15 13.0803 14.6932 12.7734 14.3183 12.7734Z" fill="#9E9EA2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3183 6.97656H4.77322C4.39824 6.97656 4.09143 7.28342 4.09143 7.65847C4.09143 8.03352 4.39824 8.34038 4.77322 8.34038H14.3183C14.6932 8.34038 15 8.03352 15 7.65847C15 7.28342 14.6932 6.97656 14.3183 6.97656Z" fill="#9E9EA2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36358 3.22762C2.11666 3.22762 2.72715 2.61703 2.72715 1.86381C2.72715 1.1106 2.11666 0.5 1.36358 0.5C0.610494 0.5 0 1.1106 0 1.86381C0 2.61703 0.610494 3.22762 1.36358 3.22762Z" fill="#9E9EA2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36358 9.0245C2.11666 9.0245 2.72715 8.4139 2.72715 7.66069C2.72715 6.90747 2.11666 6.29688 1.36358 6.29688C0.610494 6.29688 0 6.90747 0 7.66069C0 8.4139 0.610494 9.0245 1.36358 9.0245Z" fill="#9E9EA2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.36358 14.8214C2.11666 14.8214 2.72715 14.2108 2.72715 13.4576C2.72715 12.7043 2.11666 12.0938 1.36358 12.0938C0.610494 12.0938 0 12.7043 0 13.4576C0 14.2108 0.610494 14.8214 1.36358 14.8214Z" fill="#9E9EA2"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="mid-container">
+      <div class="row">
+        <div class="col-sm-3" >
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a data-toggle="modal" data-target="#myModal" href="#">asktopic</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title mt-3">
+                      asktopic
+                      <a href="#">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.95497 1.49715C9.90244 1.3654 9.82364 1.23364 9.71857 1.12824C9.35084 0.759336 8.74672 0.759336 8.37899 1.12824L1.07692 8.45367L0 10.8516L2.41651 9.79754L9.71857 2.47212C9.98124 2.20861 10.06 1.81335 9.95497 1.49715Z" fill="#9E9EA2"/>
+                        </svg>
+                      </a>
+                      <br>
+                      <span class="h6">This is a bot description</span>
+                      </h4>
+                      <div class="col-auto ml-auto text-center mt-4">
+                        <a class="float-left mx-3" href="#">
+                          <svg width="22" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 1.46532C16.0417 1.19032 15.4917 1.37365 15.2625 1.78615C14.9875 2.24448 15.1708 2.79448 15.5833 3.02365C18.425 4.67365 20.1667 7.69865 20.1667 10.9528C20.1667 15.9945 16.0417 20.1195 11 20.1195C5.95833 20.1195 1.83333 15.9945 1.83333 10.9528C1.83333 7.69865 3.575 4.67365 6.37083 3.02365C6.82917 2.74865 6.96667 2.19865 6.69167 1.78615C6.41667 1.32782 5.86667 1.19032 5.45417 1.46532C2.10833 3.43615 0 7.05698 0 10.9528C0 17.0028 4.95 21.9528 11 21.9528C17.05 21.9528 22 17.0028 22 10.9528C22 7.10282 19.8917 3.43615 16.5 1.46532V1.46532Z" fill="#00BCEB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9999 11C11.5041 11 11.9166 10.5875 11.9166 10.0833V0.916667C11.9166 0.4125 11.5041 0 10.9999 0C10.4958 0 10.0833 0.4125 10.0833 0.916667V10.0833C10.0833 10.5875 10.4958 11 10.9999 11V11Z" fill="#00BCEB"/>
+                          </svg>
+                          <div>Start</div>
+                        </a>
+                        <a class="float-left mx-3" href="#">
+                          <svg width="22" height="25" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 3.13194V0.408132C11 0.0414649 11.2619 -0.115678 11.5762 0.0938459L17.2857 4.17956L11.5762 8.21289C11.2619 8.42242 11 8.31766 11 7.89861V5.22718C6.07619 5.22718 2.09524 9.20813 2.09524 14.1319C2.09524 19.0557 6.07619 23.0367 11 23.0367C15.9238 23.0367 19.9048 19.0557 19.9048 14.1319C19.9048 11.3557 18.5952 8.84146 16.6048 7.21766L18.3857 5.96051C20.6381 7.95099 22 10.8843 22 14.1319C22 20.2081 17.0762 25.1319 11 25.1319C4.92381 25.1319 0 20.2081 0 14.1319C0 8.05575 4.92381 3.13194 11 3.13194V3.13194Z" fill="#00BCEB"/>
+                          </svg>
+                          <div>Restart</div>
+                        </a>
+                        <a class="float-left mx-3" href="#">
+                          <svg width="16" height="25" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.229004 6.88281L2.24457 20.6253C2.33619 21.3582 3.06912 21.9996 3.80205 21.9996H11.3604C12.0934 21.9996 12.8263 21.4041 12.9179 20.6253L14.8419 6.88281H0.229004Z" fill="#00BCEB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.10807 0.286853C2.42784 -0.491888 0.183233 0.561703 0.183233 0.561703L0 1.93595L15.4374 4.08894L15.6206 2.71469C15.6206 2.7605 13.7883 1.1114 8.10807 0.286853Z" fill="#00BCEB"/>
+                          </svg>
+                          <div>Delete</div>
+                        </a>
+                        <a class="float-left mx-3" href="#">
+                          <svg width="5" height="25" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.49994C1 3.32833 1.67157 3.99988 2.5 3.99988C3.32843 3.99988 4 3.32833 4 2.49994C4 1.67155 3.32843 1 2.5 1C1.67157 1 1 1.67155 1 2.49994Z" fill="#00BCEB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.9989C1 10.8273 1.67157 11.4988 2.5 11.4988C3.32843 11.4988 4 10.8273 4 9.9989C4 9.17051 3.32843 8.49896 2.5 8.49896C1.67157 8.49896 1 9.17051 1 9.9989Z" fill="#00BCEB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 17.5001C1 18.3285 1.67157 19 2.5 19C3.32843 19 4 18.3285 4 17.5001C4 16.6717 3.32843 16.0001 2.5 16.0001C1.67157 16.0001 1 16.6717 1 17.5001Z" fill="#00BCEB"/>
+                            <path d="M0 2.49994C0 3.88066 1.11933 4.99988 2.5 4.99988V2.99988C2.22382 2.99988 2 2.77601 2 2.49994H0ZM2.5 4.99988C3.88067 4.99988 5 3.88066 5 2.49994H3C3 2.77601 2.77618 2.99988 2.5 2.99988V4.99988ZM5 2.49994C5 1.11922 3.88067 0 2.5 0V2C2.77618 2 3 2.22387 3 2.49994H5ZM2.5 0C1.11933 0 0 1.11922 0 2.49994H2C2 2.22387 2.22382 2 2.5 2V0ZM0 9.9989C0 11.3796 1.11933 12.4988 2.5 12.4988V10.4988C2.22382 10.4988 2 10.275 2 9.9989H0ZM2.5 12.4988C3.88067 12.4988 5 11.3796 5 9.9989H3C3 10.275 2.77618 10.4988 2.5 10.4988V12.4988ZM5 9.9989C5 8.61819 3.88067 7.49896 2.5 7.49896V9.49896C2.77618 9.49896 3 9.72283 3 9.9989H5ZM2.5 7.49896C1.11933 7.49896 0 8.61819 0 9.9989H2C2 9.72283 2.22382 9.49896 2.5 9.49896V7.49896ZM0 17.5001C0 18.8808 1.11933 20 2.5 20V18C2.22382 18 2 17.7761 2 17.5001H0ZM2.5 20C3.88067 20 5 18.8808 5 17.5001H3C3 17.7761 2.77618 18 2.5 18V20ZM5 17.5001C5 16.1193 3.88067 15.0001 2.5 15.0001V17.0001C2.77618 17.0001 3 17.224 3 17.5001H5ZM2.5 15.0001C1.11933 15.0001 0 16.1193 0 17.5001H2C2 17.224 2.22382 17.0001 2.5 17.0001V15.0001Z" fill="#00BCEB"/>
+                          </svg>
+                          <div>More</div>
+                        </a>
+                      </div>
+                      <button type="button" class="close ml-0" data-dismiss="modal">
+                      <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.8833 0.0241088L12.0233 8.88416L3.31174 0.172602L0.886368 2.59798L9.59792 11.3095L0.787372 20.1201L3.41074 22.7435L12.2213 13.9329L20.9823 22.694L23.4077 20.2686L14.6467 11.5075L23.5067 2.64748L20.8833 0.0241088Z" fill="#B6B9BB"/>
+                      </svg>
+                      </button>
+                    </div>
+                    <section class="user-options container-fluid modal-tabs">
+                      <ul class="nav nav-tabs border-0">
+                        <li class="active pl-0"><a class="active" href="javascript:void(0)">Overview</a></li>
+                        <li><a href="virtual-accounts.html">Configuration</a></li>
+                        <li><a href="users.html">Additional Information</a></li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </section>
+                    <ul class="data-tabs">
+                      <li>
+                        <h3 class="counter">Creator</h3>
+                        <h2 class="counts">Phillip Bradley</h2>
+                      </li>
+                      <li>
+                        <h3 class="counter"># of Skills</h3>
+                        <h2 class="counts">3</h2>
+                      </li>
+                      <li>
+                        <h3 class="counter"># of Usages</h3>
+                        <h2 class="counts">18,909</h2>
+                      </li>
+                    </ul>
+                    <div class="modal-body">
+                      <h3 class="my-4">Description</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <h3 class="my-4">Bot Details</h3>
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Updated</label>
+                          <h6>15-Oct-2018</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Installs</label>
+                          <h6>100,000+</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Current Version</label>
+                          <h6>1.0.2</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Requires System</label>
+                          <h6>4.5 and up</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Permissions</label>
+                          <h6>View Details</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">Skills</label>
+                          <h6>Services, Cloud and Wireless</h6>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-5">
+                          <label class="text-uppercase">End of Support</label>
+                          <h6>24-Mar-2023</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <p class="sub-heading">This is a bot description</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span>
+                <span class="usages">usages</span></span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">Armadillo - Cat9K</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">RMA Prevention Bot for Cat9K</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">asktopic</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">This is a bot description</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">BugMeNot</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">Security Bug Search Bot</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">Elvis</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">Optical troubleshoot bot</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">asktopic</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">This is a bot description</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">Voice Assistant</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">TAC Assistant</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">asktopic</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">This is a bot description</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">MentR</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">Security Mentor</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">Service_Advisor</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">Answer queries on Service offers</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">asktopic</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">This is a bot description</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tile">
+            <div class="tile-body px-2">
+              <h4 class= "heading"><a href="#">Kowolski</a>
+              <span class="option-ico"><img src="images/options.svg"></span>
+              </h4>
+              <p class="sub-heading">FirePower Query Bot</p>
+              <div class="contact-ico"><img src="images/shape.svg">
+                <span class="contact-name mx-2">Phillip Bradley</span>
+              </div>
+              <div class="contact-summary mt-4">
+                <span class="floatLeft pt-4"><span class="bold-text">3 </span>service of skills</span>
+                <span class="floatRight pt-4"><span class="bold-text">18,909</span> usages</span>
+                <button type="button" class="btn btn-secondary btn-lg">+</button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  $(document).on('ready', function() {
+  $(".center").slick({
+  dots: true,
+  infinite: true,
+  centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
+  })
+  });
+  </script>
+</body>
+</html>
