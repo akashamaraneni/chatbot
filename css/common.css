@@ -51,7 +51,7 @@ html, body {
   font-family: 'CiscoSans' !important;
   color: #58585b;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500; /* For Menu items I am updating the font weight from 300 to 500*/
   font-style: normal;
 }
 
@@ -961,4 +961,9 @@ a:hover {
 
 .table tbody tr:hover {
   background-color: rgba(0, 188, 235, 0.09);
+}
+
+.header-white {
+  margin: 0;
+  padding: 10px 15px;
 }
